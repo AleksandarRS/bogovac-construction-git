@@ -1,0 +1,71 @@
+// Container widths
+$container-width: 810px;
+$container-narrow-width: 990px;
+
+// Colors
+$primary-color:		    #363636;
+$secondary-color:	    #01013F;
+$secondary-color-100:   #ECF3FB;
+$tertiary-color:	    #00C721;
+$white:				    #ffffff;
+$black:				    #000000;
+$gray:				    #aeaeae;
+$error-color:		    #FF0008;
+
+$gray-100:				#FCFCFC;
+$gray-150:				#E6E6E6;
+// $gray-200:				#d1d1d1;
+$gray-200:				#DFDFDF;
+
+
+
+
+// Fonts
+$primary-font: 'Raleway', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
+
+// Font Sizes
+$font-size-xsmall:	0.75em;
+$font-size-small:	0.875em;
+$font-size-base:	1em;
+$font-size-large:	1.125em;
+$font-size-xlarge:	1.25em;
+
+// Font Weight
+$font-weight-l: 300;
+$font-weight-r: 400;
+$font-weight-m: 500;
+$font-weight-sb: 600;
+$font-weight-b: 700;
+$font-weight-xb: 800;
+
+// Heading sizes
+$font-size-h1: 1.5em;
+$font-size-h2: 1.125em;
+$font-size-h3: 1.125em;
+$font-size-h4: 1.0625em;
+$font-size-h5: 1.0625em;
+$font-size-h6: 1.05em;
+
+// Breakpoints
+$mac_l: 1660px;
+$mac: 1440px;
+$lt: 1366px;
+$ls: 1280px;
+$lg: 1199px;
+$ipad: 1030px;
+$md: 991px;
+$tab: 800px;
+$sm: 767px;
+$mb_p: 640px;
+$mb: 580px;
+$ip: 420px;
+$xs: 350px;
+
+// Navigation config
+$responsive-toggle-breakpoint: $lg;
+$toggle-menu-height: 20px;
+$toggle-menu-width: 25px;
+$toggle-menu-bar-height: 3px;
+$toggle-menu-bar-color: $primary-color;
+$toggle-menu-bar-active-color: transparent;

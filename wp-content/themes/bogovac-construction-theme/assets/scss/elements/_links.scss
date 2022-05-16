@@ -1,0 +1,19 @@
+.link {
+    &.link-primary {
+        color: $primary-color;
+    }
+    &.link-secondary {
+        color: $secondary-color;
+    }
+    &.link-tertiary {
+        color: $tertiary-color;
+    }
+    &.link-arrow {
+        i {
+			font-size: $font-size-base;
+			margin-left: 4px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+    }
+}

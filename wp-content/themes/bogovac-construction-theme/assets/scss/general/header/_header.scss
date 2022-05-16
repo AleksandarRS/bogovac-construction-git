@@ -1,0 +1,71 @@
+.main-header-description {
+    text-align: right;
+    flex: 0 0 60%;
+    max-width: 60%;
+    @include min-mq ($lg) {
+        padding-right: 0;
+    }
+    @include max-mq ($tab + 20) {
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+    @include max-mq ($mb_p) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+    h1, h2, h3 {
+        font-weight: $font-weight-r;
+        margin-bottom: 0.9em;
+        @include max-mq ($mb_p) {
+            margin-bottom: 0.35em;
+            margin-top: 0.35em;
+        }
+    }
+    p {
+        font-size: $font-size-base - 0.0625;
+    }
+    
+}
+
+.logo-description-row {
+    border-bottom: 1px solid $gray-200;
+    padding-bottom: 22px;
+    padding-top: 4px;
+    position: relative;
+    @include max-mq ($mb_p) {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+    &::before {
+        background-color: $secondary-color;
+        border-radius: 0 0 30px 30px;
+        content: '';
+        height: 7px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .site-branding-main-logo {
+        padding-top: 10px;
+        @include min-mq ($lg) {
+            padding-left: 0;
+        }
+        @include max-mq ($mb_p) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    .site-title {
+        @include max-mq ($mb_p) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 170px;
+            text-align: center;
+        }
+    }
+}

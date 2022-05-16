@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+h1 {
+	font-size: $font-size-h1;
+	color: $secondary-color;
+	line-height: 1.1;
+	@include max-mq ($sm) {
+		font-size: $font-size-h1 - 0.1;
+	}
+	@include max-mq ($mb) {
+		font-size: $font-size-h1 - 0.25;
+	}
+}
+h2 {
+	font-size: $font-size-h2;
+	color: $secondary-color;
+	line-height: 1.1;
+	@include max-mq ($mb) {
+		font-size: $font-size-h2 - 0.115;
+	}
+}
+h3 {
+	font-size: $font-size-h3;
+	color: $secondary-color;
+	line-height: 1.1;
+	@include max-mq ($mb) {
+		font-size: $font-size-h3 - 0.115;
+	}
+}
+h4 {
+	font-size: $font-size-h4;
+	color: $secondary-color;
+	line-height: 1.1;
+}
+h5 {
+	font-size: $font-size-h5;
+	color: $secondary-color;
+	line-height: 1.2;
+}
+h6 {
+	font-size: $font-size-h6;
+	color: $secondary-color;
+	line-height: 1.2;
+}

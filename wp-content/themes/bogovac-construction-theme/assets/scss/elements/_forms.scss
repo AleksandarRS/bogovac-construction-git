@@ -1,0 +1,269 @@
+.toggle-form-section-wrap {
+  position: relative;
+  padding: 30px 50px 30px 5px;
+  border-top: 1px solid $gray-150;
+
+  @include min-mq ($md) {
+    padding-right: 70px;
+  }
+  @include max-mq ($mb_p) {
+    padding: 17px 50px 23px 7px;
+  }
+  @include max-mq ($mb) {
+    padding-right: 30px;
+  }
+  h2, h3, h4 {
+    position: relative;
+    margin-bottom: 0.5em;
+  }
+  .toggle-form-section {
+    position: absolute;
+    right: -40px;
+    top: 10px;
+    color: $gray-200;
+    font-size: $font-size-xlarge + 0.1;
+    @include max-mq ($mb) {
+      right: -20px;
+      font-size: $font-size-xlarge;
+    }
+  }
+}
+
+.frm_submit_button_tertiary {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  .button {
+    display: block;
+    width: 100%;
+  }
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+textarea {
+  border: 1px solid;
+  border-radius: 10px;
+  font-size: $font-size-base;
+  line-height: 1em;
+  padding: 10px 20px;
+  vertical-align: middle;
+  .frm_forms.with_frm_style & {
+    font-size: $font-size-base - 0.0625;
+    font-family: $primary-font;
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  .frm_style_formidable-style.with_frm_style .frm_blank_field & {
+    border-color: red;
+  }
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'] {
+  .frm_forms.with_frm_style & {
+    height: 46px;
+  }
+}
+
+
+
+textarea {
+  resize: none;
+  padding-left: .6em;
+  width: 100%;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  border: 1px solid;
+  border-radius: 0;
+  font-family: $secondary-font;
+  font-size: $font-size-base;
+  line-height: 1.15em;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+
+/*---- Placeholder ----*/
+::-webkit-input-placeholder {
+  opacity: 1;
+}
+\:-moz-placeholder {
+  opacity: 1;
+}
+::-moz-placeholder {
+  opacity: 1;
+}
+\:-ms-input-placeholder {
+  opacity: 1;
+}
+*::-webkit-input-placeholder {
+  opacity: 1;
+}
+*:-moz-placeholder {
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  opacity: 1;
+}
+
+fieldset {
+    min-width: 0;
+}
+
+/*----- BC Theme -------*/
+input,
+textarea {
+  &.bc-valid {
+    color: $white!important;
+    background: $secondary-color!important;
+  }
+}
+
+.bc-collapse,
+.bc-expand {
+  transition: all .5s;
+
+  &.bc-success {
+    .bc-heading {
+      .bc-icon {
+        opacity: 1;
+
+        & + * {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+
+  .bc-heading {
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      .toggle-form-section {
+        top: 8px;
+        transform: rotate(90deg);
+      }
+    }
+
+    .bc-icon {
+      top: 52%;
+      left: 0;
+      transform: translateY(-50%);
+      fill: $tertiary-color;
+      transition: all .5s;
+
+      & + * {
+        transition: all .5s;
+      }
+    }
+  }
+
+  .bc-body {
+    transition: all .5s;
+  }
+
+  .toggle-form-section {
+    transition: all .5s;
+  }
+}
+
+.bc-collapse {
+  //max-height: 103px;
+  overflow: hidden;
+
+  .bc-heading {
+    .toggle-form-section {
+      top: 5px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .bc-body {
+    opacity: 0;
+  }
+}
+
+.bc-expand {
+  .bc-heading {
+    .toggle-form-section {
+      top: 10px!important;
+      transform: rotate(0deg)!important;
+    }
+  }
+
+  .bc-body {
+    opacity: 1;
+  }
+}
+
+.bc-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+}
+
+.bc-button {
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 15px 25px;
+  width: 100%;
+  color: $white;
+  font-weight: $font-weight-xb;
+	text-transform: uppercase;
+  background-color: $tertiary-color;
+  border: 1px solid $tertiary-color;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  box-shadow: 0 5px 15px rgba(0, 199, 33, 0.5);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+    background-color: $tertiary-color!important;
+    border-color: $tertiary-color!important;
+    box-shadow: 0 10px 25px rgba(0, 199, 33, 0.5);
+  }
+}
+
+.bc-display {
+  display: block!important;
+}
+
+[bc-submit-ready="no"] {
+  display: none;
+}

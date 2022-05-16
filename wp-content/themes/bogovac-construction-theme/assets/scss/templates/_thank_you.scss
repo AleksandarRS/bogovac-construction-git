@@ -1,0 +1,59 @@
+.thank-you-section-wrapper-inner {
+    padding-bottom: 38.4vh;
+    padding-top: 19.9vh;
+    text-align: center;
+    @include max-mq ($mac) {
+        padding-bottom: 17vh;
+        padding-top: 12vh;
+    }
+    @include max-mq ($mb) {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    @include max-mq ($ip) {
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+    .main-header {
+        i.icon {
+            display: inline-block;
+            font-size: $font-size-h1 + 3.5;
+            line-height: 1;
+            margin-bottom: 0.15em;
+            vertical-align: middle;
+            @include max-mq ($mb_p) {
+                font-size: $font-size-h1 + 2.5;
+            }
+            @include max-mq ($xs) {
+                font-size: $font-size-h1 + 2;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .main-title-tpl-title {
+        text-transform: uppercase;
+        font-weight: $font-weight-xb;
+    }
+    .section-description {
+        font-size: 15px;
+        margin: 0 auto;
+        max-width: 520px;
+        padding-top: 10px;
+    }
+}
+.site-content {
+    @include min-max-mq($sm, $ipad) {
+        padding-bottom: 80px;
+    }
+}
+.site-footer {
+    @include min-max-mq($sm, $ipad) {
+        background-color: $white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}
+
