@@ -9,7 +9,9 @@ function custom_scripts_and_styles() {
 	
 	if( defined('ACF_GOOGLE_API_KEY') ){
 		$theme_options['google_api_key'] = ACF_GOOGLE_API_KEY;
-	}            
+	}  
+	
+	$theme_options['ajax_url'] = admin_url('admin-ajax.php');
 
 	wp_localize_script( 'main', 'theme', $theme_options );
 	

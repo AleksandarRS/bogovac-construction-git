@@ -178,7 +178,7 @@ let _this = module.exports = {
 			 * @param e Event
 			 */
 			function validateBody(e) {
-				console.log(this);
+				// console.log(this);
 				var _this = this;
 				//_this.parentNode.classList.add('bc-display');
 
@@ -297,7 +297,19 @@ let _this = module.exports = {
 					// AUTOSAVE DATABASE COMMUNICATION
 					// - Use Formidable plugin API for AJAX saving of entry record 
 					// - or create custom query for saving of entry record (this should be a last option)
-					console.log(entry);
+					// console.log(entry);
+					var form_id = $('.frm_form_fields input[name="form_id"]').val();
+
+                    $.ajax({
+                        url: theme.ajax_url,
+                        type: 'POST',
+                        dataType: 'HTML',
+                        data: {
+                            action: 'create_entry_before_submit',
+							form_id: form_id,
+                            entry: entry,
+                        },
+                    }).done(function (){});
 				}
 
 				validateSubmitReady();
