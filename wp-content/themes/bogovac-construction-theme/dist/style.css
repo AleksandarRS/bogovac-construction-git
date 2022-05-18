@@ -3780,7 +3780,7 @@ h6 {
   padding-right: 0;
 }
 
-.button {
+.bc-button {
   font-weight: 800;
   text-transform: uppercase;
   padding: 15px 25px;
@@ -3790,21 +3790,21 @@ h6 {
   transition: all .5s;
 }
 
-.button.button-primary {
+.bc-button.bc-button-primary {
   background-color: #363636;
 }
 
-.button.button-secondary {
+.bc-button.bc-button-secondary {
   background-color: #01013F;
 }
 
-.button.button-tertiary {
+.bc-button.bc-button-tertiary {
   background-color: #00C721;
   border: 1px solid #00C721;
   color: #ffffff;
 }
 
-.button.button-tertiary:hover {
+.bc-button.bc-button-tertiary:hover {
   background-color: #01013F;
   border-color: #01013F;
 }
@@ -3864,36 +3864,36 @@ h6 {
   width: auto;
 }
 
-.toggle-form-section-wrap {
+.bc-toggle-form-section-wrap {
   position: relative;
   padding: 14px 50px 14px 2px;
   border-top: 1px solid #E6E6E6;
 }
 
 @media (min-width: 991px) {
-  .toggle-form-section-wrap {
+  .bc-toggle-form-section-wrap {
     padding-right: 60px;
   }
 }
 
 @media (max-width: 640px) {
-  .toggle-form-section-wrap {
+  .bc-toggle-form-section-wrap {
     padding: 17px 50px 23px 7px;
   }
 }
 
 @media (max-width: 580px) {
-  .toggle-form-section-wrap {
+  .bc-toggle-form-section-wrap {
     padding-right: 30px;
   }
 }
 
-.toggle-form-section-wrap h2, .toggle-form-section-wrap h3, .toggle-form-section-wrap h4 {
+.bc-toggle-form-section-wrap h2, .bc-toggle-form-section-wrap h3, .bc-toggle-form-section-wrap h4 {
   position: relative;
   margin-bottom: 0.5em;
 }
 
-.toggle-form-section-wrap .toggle-form-section {
+.bc-toggle-form-section-wrap .bc-toggle-form-section {
   position: absolute;
   right: -40px;
   top: 10px;
@@ -3902,18 +3902,18 @@ h6 {
 }
 
 @media (max-width: 580px) {
-  .toggle-form-section-wrap .toggle-form-section {
+  .bc-toggle-form-section-wrap .bc-toggle-form-section {
     right: -20px;
     font-size: 1.25em;
   }
 }
 
-.frm_submit_button_tertiary {
+.bc-frm_submit_button_tertiary {
   margin-bottom: 15px;
   margin-top: 15px;
 }
 
-.frm_submit_button_tertiary .button {
+.bc-frm_submit_button_tertiary .button {
   display: block;
   width: 100%;
 }
@@ -4083,8 +4083,8 @@ textarea.bc-valid {
   cursor: pointer;
 }
 
-.bc-collapse .bc-heading:hover .toggle-form-section,
-.bc-expand .bc-heading:hover .toggle-form-section {
+.bc-collapse .bc-heading:hover .bc-toggle-form-section,
+.bc-expand .bc-heading:hover .bc-toggle-form-section {
   top: 8px;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -4118,8 +4118,8 @@ textarea.bc-valid {
   transition: all .5s;
 }
 
-.bc-collapse .toggle-form-section,
-.bc-expand .toggle-form-section {
+.bc-collapse .bc-toggle-form-section,
+.bc-expand .bc-toggle-form-section {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
@@ -4129,7 +4129,7 @@ textarea.bc-valid {
   overflow: hidden;
 }
 
-.bc-collapse .bc-heading .toggle-form-section {
+.bc-collapse .bc-heading .bc-toggle-form-section {
   top: 5px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -4140,7 +4140,7 @@ textarea.bc-valid {
   opacity: 0;
 }
 
-.bc-expand .bc-heading .toggle-form-section {
+.bc-expand .bc-heading .bc-toggle-form-section {
   top: 10px !important;
   -webkit-transform: rotate(0deg) !important;
       -ms-transform: rotate(0deg) !important;
@@ -4149,6 +4149,10 @@ textarea.bc-valid {
 
 .bc-expand .bc-body {
   opacity: 1;
+}
+
+.bc-expand + div > .bc-heading {
+  border: none !important;
 }
 
 .bc-icon {
@@ -4274,7 +4278,7 @@ textarea.bc-valid {
   margin-top: 0;
 }
 
-.frm_forms .frm_fields_container > .frm_form_field:first-of-type .toggle-form-section-wrap {
+.frm_forms .frm_fields_container > .frm_form_field:first-of-type .bc-toggle-form-section-wrap {
   border-top: none;
 }
 

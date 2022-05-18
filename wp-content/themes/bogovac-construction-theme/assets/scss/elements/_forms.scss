@@ -1,4 +1,4 @@
-.toggle-form-section-wrap {
+.bc-toggle-form-section-wrap {
   position: relative;
   padding: 14px 50px 14px 2px;
   border-top: 1px solid $gray-150;
@@ -16,7 +16,7 @@
     position: relative;
     margin-bottom: 0.5em;
   }
-  .toggle-form-section {
+  .bc-toggle-form-section {
     position: absolute;
     right: -40px;
     top: 10px;
@@ -29,7 +29,7 @@
   }
 }
 
-.frm_submit_button_tertiary {
+.bc-frm_submit_button_tertiary {
   margin-bottom: 15px;
   margin-top: 15px;
   .button {
@@ -170,7 +170,7 @@ textarea {
     cursor: pointer;
 
     &:hover {
-      .toggle-form-section {
+      .bc-toggle-form-section {
         top: 8px;
         transform: rotate(90deg);
       }
@@ -193,7 +193,7 @@ textarea {
     transition: all .5s;
   }
 
-  .toggle-form-section {
+  .bc-toggle-form-section {
     transition: all .5s;
   }
 }
@@ -203,7 +203,7 @@ textarea {
   overflow: hidden;
 
   .bc-heading {
-    .toggle-form-section {
+    .bc-toggle-form-section {
       top: 5px;
       transform: rotate(180deg);
     }
@@ -216,7 +216,7 @@ textarea {
 
 .bc-expand {
   .bc-heading {
-    .toggle-form-section {
+    .bc-toggle-form-section {
       top: 10px!important;
       transform: rotate(0deg)!important;
     }
@@ -224,6 +224,10 @@ textarea {
 
   .bc-body {
     opacity: 1;
+  }
+
+  & + div > .bc-heading {
+    border: none!important;
   }
 }
 

@@ -10,10 +10,10 @@ let _this = module.exports = {
 	-------------------------------------------------------------------------------*/
 	$dom: {
 		myInput: $('.frm_form_field > input'),
-		formSubmit: $('.frm_submit_button_tertiary'), 
+		formSubmit: $('.bc-frm_submit_button_tertiary'), 
 		formSection: $('.frm_form_field.frm_section_heading'),
-		formSectionHeading: $('.form-field > .toggle-form-section-wrap'),
-		formSectionBody: $('.toggle-form-section-wrap + *'),
+		formSectionHeading: $('.form-field > .bc-toggle-form-section-wrap'),
+		formSectionBody: $('.bc-toggle-form-section-wrap + *'),
     },
 
     vars: {

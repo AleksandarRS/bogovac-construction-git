@@ -1,18 +1,18 @@
-.button {
+.bc-button {
 	font-weight: $font-weight-xb;
 	text-transform: uppercase;
 	padding: 15px 25px;
 	border-radius: 30px;
 	transition: all .5s;
-	&.button-primary {
+	&.bc-button-primary {
 		background-color: $primary-color;
 	}
 
-	&.button-secondary {
+	&.bc-button-secondary {
 		background-color: $secondary-color;
 	}
 
-	&.button-tertiary {
+	&.bc-button-tertiary {
 		background-color: $tertiary-color;
 		border: 1px solid $tertiary-color;
 		color: $white;
